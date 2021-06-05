@@ -15,6 +15,10 @@ a{
 a:hover{
     text-decoration: none;
 }
+p{
+    font-size: 15px;
+    color: #9999;
+}
 /* header css */
 
 header {
@@ -44,6 +48,8 @@ header {
 }
 .banner-text p{
     padding: 20px 0 30px;
+    font-size: 20px;
+    color: #fff;
 }
 
 .banner-icon a{
@@ -92,10 +98,60 @@ header {
 .service-icon i{
     font-size: 30px;
     color: #fff;
-    background-image: linear-gradient(#48baff,#5fc3ff);
+    background: linear-gradient(to right,#48baff 50%,#5fc3ff 50%);
     padding: 35px;
 }
 .service-text{
     text-align: center;
     padding: 20px 0;
+}
+
+/* product css */
+.strict-product{
+    background-color: #f6f9f9;
+    padding: 20px 0;
+}
+.product-heading{
+    text-align: center;
+    padding: 50px 0;
+}
+.product-heading h1{
+    font-size: 40px;
+}
+.p-img{
+    position: relative;
+    margin-bottom: 25px;
+}
+.p-img img{
+    width: 100%;
+}
+.p-overlay{
+    background-color: rgba(21, 164, 250, .8);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .5s;
+}
+.p-overlay ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+.p-overlay ul li{
+    border: 1px solid #ffff;
+    padding: 10px;
+    margin-right: 10px;
+}
+.p-overlay ul li i{
+    color: #ffff;
+}
+.p-img:hover .p-overlay{
+    opacity: 1;
 }
