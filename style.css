@@ -33,7 +33,7 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
-    height: 100vh;
+    padding: 100px 0;
 }
 .banner-text{
     color: #ffff;
